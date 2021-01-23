@@ -6,4 +6,4 @@ There are different types of stemming algorithms. We use only Porter’s algorit
 
 # Lemmatization
 Lemmatization method has analyzed the structure of words, the relationship between words and parts of words to accurately identify the root word. Part of speech tagger and vocabulary words helps to return the dictionary form of a word. But this requires a lot of processing time and disk space as compared to Stemming method. The accuracy of the NLP model is comparatively high in this method. The root word is known as a lemma.
-![Picture 2](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/Stemming-Lemmatization/Screenshot%202021-01-23%20at%208.09.52%20AM.png)
+![Picture 2](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/Stemming-Lemmatization/Screenshot%202021-01-23%20at%208.10.26%20AM.png)
