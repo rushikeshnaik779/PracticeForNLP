@@ -1,1 +1,1 @@
-# Creating ngrams
+# "YOU SHALL KNOW THE NATURE OF A WORD BY THE COMPANY IT KEEPS". _John Rupert Firth
