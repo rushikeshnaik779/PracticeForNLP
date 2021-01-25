@@ -65,4 +65,5 @@ def gen(text):
 ```
 
 4) Randomly Generated Text : 
-![output image]()
+### (OUTPUT)
+![output image](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/ngrams/Screenshot%202021-01-25%20at%204.48.39%20PM.png)
