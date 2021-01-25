@@ -2,6 +2,28 @@
 ~John Rupert Firth
 
 
+Creating N-grams with pure python 
+```python
+def generate_ngrams(sentence, n):
+
+    # convert to lowercases 
+    sentence = sentence.lower()
+
+    # Replace all none alphanumeric characters with spaces 
+
+
+    sentence = re.sub(r'[^a-zA-Z0-9]', ' ', sentence)
+
+    # break sentence in tokens, remove empty tokens 
+    tokens = [token for token in sentence.split(" ") if token != ""]
+
+    # use the zip function to help us generate n-grams
+    # Concatenate the tokens into ngrams and return 
+
+    ngrams = zip(*[tokens[i:] for i in range(n)])
+    return [" ".join(ngram) for ngram in ngrams]
+```
+
 Language Model
 Types : 
 - Statistical Language Model: 
