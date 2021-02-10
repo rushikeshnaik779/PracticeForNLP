@@ -15,6 +15,7 @@ Following are the links to important pages of the repository.
 1. [using Word2vec and Doc2vec](https://github.com/rushikeshnaik779/classification_algorithms_miscellaneous/blob/main/D2V_W2V.ipynb)
 2. [deepNN (base level)](https://github.com/rushikeshnaik779/classification_algorithms_miscellaneous/blob/main/DeepNN.ipynb)
 3. [Spam-Detection](https://github.com/rushikeshnaik779/sms_spam/blob/main/SMS_spam_detection_.ipynb)
+4. [Tweet Disaster](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/NLP_tweet_disaster/NLP_with_Tweet.ipynb)
 
 ## Topics to focus 
 
