@@ -8,7 +8,13 @@ Following are the links to important pages of the repository.
 | Minimum Edit Distance| [code](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/Minimum_Edit_Distance/minimum_Edit_distance.ipynb) | [Explaination](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/Minimum_Edit_Distance/README.md) | 
 | Spell Corrector | [code](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/spell_corrector/Spell_Correction.ipynb) | [Explaination](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/spell_corrector/README.md) | 
 | TF-IDF| [code](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/tfidfFromScratch/TF_IDF_from_Scratch.ipynb) | [Explaination](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/tfidfFromScratch/README.md) | 
+| Word2vec using numpy | [code](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/word2vec_using_numpy/word2vec_skipgram_v1.ipynb) | [Explaination](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/word2vec_using_numpy/README.md) | 
+| Naive Bayes| [code](https://github.com/rushikeshnaik779/EDA/blob/master/Naive_Bayes_with_Python.ipynb) | Explaination | 
 
+##Classification Notebooks 
+1. [using Word2vec and Doc2vec](https://github.com/rushikeshnaik779/classification_algorithms_miscellaneous/blob/main/D2V_W2V.ipynb)
+2. [deepNN (base level)](https://github.com/rushikeshnaik779/classification_algorithms_miscellaneous/blob/main/DeepNN.ipynb)
+3. [Spam-Detection](https://github.com/rushikeshnaik779/sms_spam/blob/main/SMS_spam_detection_.ipynb)
 
 ## Topics to focus 
 
