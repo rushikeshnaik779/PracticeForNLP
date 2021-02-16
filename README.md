@@ -17,6 +17,9 @@ Following are the links to important pages of the repository.
 3. [Spam-Detection](https://github.com/rushikeshnaik779/sms_spam/blob/main/SMS_spam_detection_.ipynb)
 4. [Tweet Disaster](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/NLP_tweet_disaster/NLP_with_Tweet.ipynb)
 
+## TEXT DATA EXPLORATION 
+1. [COVID TWEETS](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/exploration/Basic_EDA_and_Visualization_of_covid_tweets.ipynb)
+
 ## Topics to focus 
 
 * Text Representation 
