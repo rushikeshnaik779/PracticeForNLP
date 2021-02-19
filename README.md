@@ -22,6 +22,9 @@ Following are the links to important pages of the repository.
 ## TEXT DATA EXPLORATION 
 1. [COVID TWEETS](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/exploration/Basic_EDA_and_Visualization_of_covid_tweets.ipynb)
 
+## NAMED ENTITY RECOGNITION USING TF
+* [N_E_R](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/N_E_R/NER.ipynb)
+
 ## Topics to focus 
 
 * Text Representation 
