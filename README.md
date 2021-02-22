@@ -10,6 +10,7 @@ Following are the links to important pages of the repository.
 | TF-IDF| [code](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/tfidfFromScratch/TF_IDF_from_Scratch.ipynb) | [Explaination](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/tfidfFromScratch/README.md) | 
 | Word2vec using numpy | [code](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/word2vec_using_numpy/word2vec_skipgram_v1.ipynb) | [Explaination](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/word2vec_using_numpy/README.md) | 
 | Naive Bayes| [code](https://github.com/rushikeshnaik779/EDA/blob/master/Naive_Bayes_with_Python.ipynb) | Explaination | 
+| RNN using Numpy| [code](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/rnn_from_scratch/RNN_from_scartch.ipynb) | Explaination | 
 
 ##Classification Notebooks 
 1. [using Word2vec and Doc2vec](https://github.com/rushikeshnaik779/classification_algorithms_miscellaneous/blob/main/D2V_W2V.ipynb)
