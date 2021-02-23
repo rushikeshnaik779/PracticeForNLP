@@ -79,3 +79,113 @@ OUTPUT:
        [-0.00423727, -0.01283284,  0.00081796, -0.01422961,  0.00207391]])}
 """
 ```
+
+3. FORWARD AND BACKWARD PROP 
+```python
+def int_to_word_vecs(inds, parameters):
+    """
+    inds : numpy array. shape:(1, m)
+    parameters : dict. weights to be trained
+    """
+    m = inds.shape[1]
+    WRD_EMB = parameters['WRD_EMB']
+    word_vec = WRD_EMB[inds.flatten(), :].T
+
+    assert(word_vec.shape == (WRD_EMB.shape[1], m))
+
+    return word_vec
+
+
+
+def linear_dense(word_vec, parameters):
+    """
+    word_vec : numpy array. shape : (emb_size, m)
+    parameters : dict. weights to be trained
+    """
+
+    m = word_vec.shape[1]
+    W = parameters['W']
+    Z = np.dot(W, word_vec)
+
+    assert(Z.shape == (W.shape[0], m))
+
+    return W, Z
+    
+def softmax(Z):
+    """
+    Z : output out of the dense layer. shape : (vocab_size, m)
+    """
+    softmax_out = np.divide(np.exp(Z), np.sum(np.exp(Z), axis=0, keepdims=True) + 0.001)
+
+    assert(softmax_out.shape == Z.shape)
+
+    return softmax_out
+    
+    
+ def forward_propagation(inds, parameters):
+    word_vec = int_to_word_vecs(inds, parameters)
+    W, Z = linear_dense(word_vec, parameters)
+    softmax_out = softmax(Z)
+
+    caches = {}
+    caches['inds'] = inds
+    caches['word_vec'] = word_vec
+    caches['W'] = W
+    caches['Z'] = Z
+
+    return softmax_out, caches
+
+
+def softmax_backward(Y, softmax_out):
+    """
+    Y: labels of training data. shape:(vocab_size, m)
+    softmax_out : output out of softmax. shape: (vocab_size, m)
+    """
+
+    dL_dZ = softmax_out - Y
+    assert(dL_dZ.shape == softmax_out.shape)
+
+    return dL_dZ
+    
+    
+def dense_backward(dL_dZ, caches):
+    """
+    dL_dZ : shape : (vocab_size, m)
+    caches: dict. results from each steps of forward propagation
+    """
+    W = caches['W']
+    word_vec = caches['word_vec']
+    m = word_vec.shape[1]
+
+    dL_dW = (1/m) * np.dot(dL_dZ, word_vec.T)
+    dL_dword_vec = np.dot(W.T, dL_dZ)
+
+    assert( W.shape == dL_dW.shape)
+    assert( word_vec.shape == dL_dword_vec.shape)
+
+    return dL_dW, dL_dword_vec
+    
+def backward_propagation(Y, softmax_out, caches):
+    dL_dZ = softmax_backward(Y, softmax_out)
+    dL_dW, dL_dword_vec = dense_backward(dL_dZ, caches)
+    
+    gradients = dict()
+    gradients['dL_dZ'] = dL_dZ
+    gradients['dL_dW'] = dL_dW
+    gradients['dL_dword_vec'] = dL_dword_vec
+    
+    return gradients
+
+def update_parameters(parameters, caches, gradients, learning_rate):
+    vocab_size, emb_size = parameters['WRD_EMB'].shape
+    inds = caches['inds']
+    dL_dword_vec = gradients['dL_dword_vec']
+    m = inds.shape[-1]
+    
+    parameters['WRD_EMB'][inds.flatten(), :] -= dL_dword_vec.T * learning_rate
+
+    parameters['W'] -= learning_rate * gradients['dL_dW']
+    
+    
+    
+```
