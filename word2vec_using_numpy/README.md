@@ -189,7 +189,7 @@ def update_parameters(parameters, caches, gradients, learning_rate):
     
     
 ```
-4. Training model :
+4. Training model 
 ![Training Graph](https://github.com/rushikeshnaik779/PracticeForNLP/blob/main/word2vec_using_numpy/Screenshot%202021-02-23%20at%202.06.32%20PM.png)
 
 5. Output :
