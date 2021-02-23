@@ -16,3 +16,21 @@ def tokenize(text):
 tokenize('I love goa')
 # output : ['i', 'love', 'goa']
 ```
+Data Mapping:
+```python
+def mapping(tokens):
+    word_to_id = dict()
+    id_to_word = dict()
+    
+    for i, token in enumerate(set(tokens)):
+        word_to_id[token] = i
+        id_to_word[i] = token
+
+    
+    return word_to_id, id_to_word
+    
+    
+ mapping(['i', 'love', 'goa'])
+ 
+ # output : ({'goa': 1, 'i': 0, 'love': 2}, {0: 'i', 1: 'goa', 2: 'love'})
+```
