@@ -45,3 +45,7 @@ Following are the links to important pages of the repository.
 |------|------|-----|
 |[Headlines Sarcasm Detection](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection)|Classification using Bilstm|[url](https://www.kaggle.com/rushinaik/classification-using-bi-lstm)|
 |[Headlines Sarcasm Detection](https://www.kaggle.com/rmisra/news-headlines-dataset-for-sarcasm-detection)|Classification using NB and LogReg|[url](https://www.kaggle.com/rushinaik/classification-using-nb-and-logreg-79-accuracy)|
+
+
+Pytorch For NLP : 
+[click](https://github.com/rushikeshnaik779/EDA/tree/master/pytorch_for_nlp)
